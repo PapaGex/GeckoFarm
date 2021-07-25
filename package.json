@@ -1,0 +1,15 @@
+{
+  "name": "geckofarm",
+  "version": "1.0.0",
+  "description": "gecko breeder database of breeders",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kawekaweau",
+  "license": "ISC",
+  "dependencies": {
+    "http": "^0.0.1-security"
+  },
+  "devDependencies": {}
+}
