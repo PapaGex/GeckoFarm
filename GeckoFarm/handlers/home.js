@@ -8,7 +8,7 @@ const species = require('../data/species');
 module.exports = (req, res) => {
     const pathname = url.parse(req.url).pathname;
 
-    if (pathmame === '/' && req.method === 'GET') {
+    if (pathname === '/' && req.method === 'GET') {
 
         // implement the logic for showing the html view
         let filepath = path.normalize(
@@ -22,19 +22,16 @@ module.exports = (req, res) => {
                 });
 
                 res.write(404);
-                res.end();
                 return;
             }
         res.writeHead(200,{
             'Content-Type': 'text/html'
         });
-
         res.write(data);
         res.end();
         });
 
     } else {
         return true;
-
     }
 }
